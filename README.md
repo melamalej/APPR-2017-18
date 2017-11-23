@@ -16,13 +16,13 @@ Povezave do podatkov:
 
 Podatki so v HTML in CSV obliki.
 
-Tabela 1 po stolpcih: Stanovanjske nepremičnine, leto, število transkacij, indeks cen;
+Tabela 1 po stolpcih: Stanovanjske nepremičnine, leto (2008 -2016), število transkacij, indeks cen;
 
-Tabela 2  po stolpcih: Mesec in leto, povprečna plača, 4 stolpci obrestnih mer stanovanjskih kreditov;
+Tabela 2  po stolpcih: Mesec in leto (2014 -2017), povprečna plača, 4 stolpci obrestnih mer stanovanjskih kreditov;
 
-Tabela 3 po stolpcih: Tip naselja, leto, število stanovanj, število stanovanj na 1.000 prebivalcev, število naseljenih stanovanj, število počitniških stanovanj, delež novih stanovanj, grajenih po letu 2005;
+Tabela 3 po stolpcih: Tip naselja, leto  (2011 in 2015), število stanovanj, število stanovanj na 1.000 prebivalcev, število naseljenih stanovanj, število počitniških stanovanj, delež novih stanovanj, grajenih po letu 2005;
 
-Tabela 4 po stolpcoh: Država, kvartal in leto, indeks cen; 
+Tabela 4 po stolpcoh: Država, leto (2008 - 2016), indeks cen; 
 
 
 ## Program
