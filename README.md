@@ -1,11 +1,29 @@
 # Analiza podatkov s programom R, 2017/18
 
+## Analiza trga stanovanjskih nepremičnin 
+
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2017/18
 
 ## Tematika
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal. Tukaj boste
-napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+Poskusila bom analizirati stanovanjski nepremičninski trg v Sloveniji s pomočjo podatkov o cenah in transakcijah stanovanjskih nepremičnin, obrestnih merah stanovanjskih kreditov in povprečnih mesečnih plač. Ugotovitve bom tudi primerjala s številom naseljenih in počitniških stanovanj in številom novogradenj. Na koncu bom dodala še podatke o indeksih cen stanovanjskih nepremičnin v državah Evrope in jih razvrstila po velikosti indeksa.
+
+Povezave do podatkov:
+- http://ec.europa.eu/eurostat/data/database (Finance and economy - Prices)
+- http://pxweb.stat.si/pxweb/Database/Ekonomsko/04_cene/04190_ICSN/04190_ICSN.asp
+- http://pxweb.stat.si/pxweb/Database/Dem_soc/Dem_soc.asp
+- http://www.bsi.si/financni-podatki-r.asp?MapaId=981
+
+Podatki so v HTML in CSV obliki.
+
+Tabela 1 po stolpcih: Stanovanjske nepremičnine, leto, število transkacij, indeks cen;
+
+Tabela 2  po stolpcih: Mesec in leto, povprečna plača, 4 stolpci obrestnih mer stanovanjskih kreditov;
+
+Tabela 3 po stolpcih: Tip naselja, leto, število stanovanj, število stanovanj na 1.000 prebivalcev, število naseljenih stanovanj, število počitniških stanovanj, delež novih stanovanj, grajenih po letu 2005;
+
+Tabela 4 po stolpcoh: Država, kvartal in leto, indeks cen; 
+
 
 ## Program
 
