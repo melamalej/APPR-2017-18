@@ -36,6 +36,22 @@ uvozi.tabela2 <- function() {
 
 tip <- uvozi.tabela2()
 
+#bdp
+
+uvozi.bdp <- function() {
+  podatki <- read_csv2("BDP.csv", skip = 3, n_max = 1, col_names = c("BDP", 2008:2016),
+                       locale = locale(encoding = "Windows-1250"))
+  bdp <- podatki %>% melt(podatki, value.name = "Letna_sprememba_obsega_BDP(%)", id.vars = "BDP", measure.vars = names(BDP)[-1],
+                              variable.name = "Leto")
+  bdp$Leto <- parse_number(bdp$Leto)
+  
+  bdp$BDP <- NULL
+  
+  return(bdp) 
+}
+
+bdp <- uvozi.bdp()
+
 # Funkcija, ki uvozi občine iz Wikipedije
 uvozi.obcine <- function() {
   link <- "http://sl.wikipedia.org/wiki/Seznam_ob%C4%8Din_v_Sloveniji"
