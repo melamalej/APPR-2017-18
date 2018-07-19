@@ -20,12 +20,13 @@ Tabela 1: Število podjetij po regijah
 Stolpci: leto, regija;
 
 Tabela 2: Število novonastalih podjetij in število podjetij, ki so prenehala poslovati
-Stolpci: leto, regija, število novonastalih podjetij, število podjetij, ki so prenehala poslovati;
+Stolpci: leto, regija, tip, število;
 
 Tabela 3: Število podjetij glede na panogo
 Stolpci: leto, panoga;
 
-
+Tabela 4: BDP
+Stolpci: Leto, Letna_sprememba_obsega_BDP(%)
 
 ## Program
 
