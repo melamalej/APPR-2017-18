@@ -7,9 +7,9 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2017/18
 ## Tematika
 
 Analizirala bom število podjetij v Sloveniji glede na različne spremenljivke.
-Predvsem bom primerjala koliko podjetij je v različnih regijah, koliko od tega je novo nastalih in koliko je propadlih po letih.
+Predvsem bom primerjala koliko podjetij je v različnih regijah, koliko od tega je novo nastalih in koliko je propadlih po letih. Pregledala bom tudi števila podjetij po panogah.
 
-Potem bom pregledala še števila podjetij po panogah, kjer jih bom tudi ločila po velikosti in vrsti skupine podjetij. Naredila bom tudi tabelo skupin podjetij po vrstah skupin in oblikah vodij skupine.
+Nato bom še vse podatke o številu podjetij primirjala z letno spremembo BDP.
 
 Vsi podatki so zbrani na spletni strani Statističnaga urada:
 - http://pxweb.stat.si/pxweb/Database/Ekonomsko/Ekonomsko.asp
@@ -20,13 +20,11 @@ Tabela 1: Število podjetij po regijah
 Stolpci: leto, regija;
 
 Tabela 2: Število novonastalih podjetij in število podjetij, ki so prenehala poslovati
-Stolpci: leto, regija;
+Stolpci: leto, regija, število novonastalih podjetij, število podjetij, ki so prenehala poslovati;
 
 Tabela 3: Število podjetij glede na panogo
-Stolpci: leto, panoga, velikost podjetja, vrsta skupine podjetij;
+Stolpci: leto, panoga;
 
-Tabela 4: Skupine podjetij po vrstah skupin in oblikah vodij skupine, Slovenija, letno
-Stolpci: leto, vrsta skupine podjetij, pravnoorganizacijska oblika vodje skupine; 
 
 
 ## Program

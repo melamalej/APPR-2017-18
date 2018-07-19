@@ -2,6 +2,40 @@
 
 sl <- locale("sl", decimal_mark = ",", grouping_mark = ".")
 
+require(dplyr)
+require(tidyr)
+require(readr)
+
+#tabela1
+uvozi.tabela1 <- function() {
+  tabela1 <- read_csv2("tabela1.csv", skip = 4, n_max = 10, col_names = c("Regija", 2008:2016),
+                       locale = locale(encoding = "Windows-1250"))
+  tabela1 <- tabela1 %>% melt(tabela1, value.name = "Število", id.vars = "Regija", measure.vars = names(tabela1)[-1],
+              variable.name = "Leto")
+  tabela1$Leto <- parse_number(tabela1$Leto)
+  tabela1$Regija <- factor(tabela1$Regija)
+  
+  return(tabela1) 
+}
+
+regije <- uvozi.tabela1()
+
+#tabela2
+uvozi.tabela2 <- function() {
+  tabela2 <- read_csv2("tabela2.csv", skip = 2, n_max = 10, 
+                      locale = locale(encoding = "Windows-1250"))
+  stolpci <- data.frame(leto = t(tabela2[1,]), tip = t(tabela2[2,])) %>% fill(1) %>%
+    apply(1, paste, collapse = ".")
+  stolpci[1] <- "regija"
+  names(tabela2) <- stolpci
+  tabela <- tabela2[-c(1, 2), ] %>% melt(id.vars = "regija", value.name = "stevilo") %>%
+    separate(variable, into = c("leto", "tip"), sep = "[.]") %>%
+    mutate(leto = parse_number(leto), stevilo = parse_number(stevilo))
+  return(tabela)
+}
+
+tip <- uvozi.tabela2()
+
 # Funkcija, ki uvozi občine iz Wikipedije
 uvozi.obcine <- function() {
   link <- "http://sl.wikipedia.org/wiki/Seznam_ob%C4%8Din_v_Sloveniji"
